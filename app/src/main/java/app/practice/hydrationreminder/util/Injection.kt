@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import app.practice.hydrationreminder.data.CountUtil
+import app.practice.hydrationreminder.sync.ReminderTasks
 
 object Injection {
 
@@ -13,5 +14,9 @@ object Injection {
 
     fun provideCountUtil(context: Context): CountUtil {
         return CountUtil(provideSharedPreferences(context))
+    }
+
+    fun provideReminderTasks(context: Context): ReminderTasks {
+        return ReminderTasks(context)
     }
 }
