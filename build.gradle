@@ -28,6 +28,9 @@ task clean(type: Delete) {
 }
 
 ext {
+    // Kotlin
+    coroutineCoreVersion = "1.2.2"
+
     // Android
     androidXAppCompatVersion = "1.1.0"
     androidXCoreKtxVersion = "1.1.0"
@@ -35,4 +38,7 @@ ext {
 
     // Google
     materialVersion = "1.2.0-alpha03"
+
+    // Firebase
+    firebaseJobDispatcherVersion = "0.8.6"
 }

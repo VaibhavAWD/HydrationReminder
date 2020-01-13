@@ -28,6 +28,7 @@ dependencies {
 
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineCoreVersion"
 
     // Android
     implementation "androidx.appcompat:appcompat:$androidXAppCompatVersion"
@@ -36,4 +37,7 @@ dependencies {
 
     // Google
     implementation "com.google.android.material:material:$materialVersion"
+
+    // Firebase
+    implementation "com.firebase:firebase-jobdispatcher:$firebaseJobDispatcherVersion"
 }
