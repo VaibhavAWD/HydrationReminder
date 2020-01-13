@@ -31,6 +31,7 @@ ext {
     // Android
     androidXAppCompatVersion = "1.1.0"
     androidXCoreKtxVersion = "1.1.0"
+    androidXPreferenceVersion = "1.1.0"
 
     // Google
     materialVersion = "1.2.0-alpha03"
