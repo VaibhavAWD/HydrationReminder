@@ -23,4 +23,8 @@ object Injection {
     fun provideNotificationUtil(context: Context): NotificationUtil {
         return NotificationUtil(context)
     }
+
+    fun provideWaterReminderUtil(context: Context): WaterReminderUtil {
+        return WaterReminderUtil(context)
+    }
 }
