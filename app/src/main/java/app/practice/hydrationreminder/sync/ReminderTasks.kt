@@ -4,7 +4,7 @@ import android.content.Context
 import app.practice.hydrationreminder.data.CountUtil
 import app.practice.hydrationreminder.util.Injection
 
-class ReminderTasks(private val context: Context) {
+class ReminderTasks(context: Context) {
 
     companion object {
         const val ACTION_INCREMENT_WATER_COUNT = "increment-water-count"
@@ -13,6 +13,7 @@ class ReminderTasks(private val context: Context) {
     }
 
     private var countUtil: CountUtil = Injection.provideCountUtil(context)
+    private var notificationUtil = Injection.provideNotificationUtil(context)
 
     fun executeTask(action: String) {
         when (action) {
@@ -27,7 +28,7 @@ class ReminderTasks(private val context: Context) {
     }
 
     private fun dismissNotification() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        notificationUtil.clearAllNotification()
     }
 
     private fun issueChargingReminder() {
