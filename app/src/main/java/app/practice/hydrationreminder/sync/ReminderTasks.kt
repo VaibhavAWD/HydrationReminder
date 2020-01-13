@@ -33,6 +33,7 @@ class ReminderTasks(context: Context) {
 
     private fun issueChargingReminder() {
         countUtil.incrementChargingReminderCount()
+        notificationUtil.remindBacauseCharging()
     }
 
 }
