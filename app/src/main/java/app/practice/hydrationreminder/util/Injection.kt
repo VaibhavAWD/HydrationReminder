@@ -19,4 +19,8 @@ object Injection {
     fun provideReminderTasks(context: Context): ReminderTasks {
         return ReminderTasks(context)
     }
+
+    fun provideNotificationUtil(context: Context): NotificationUtil {
+        return NotificationUtil(context)
+    }
 }
